@@ -1,0 +1,487 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full height of the viewport */
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #333333;
+    overflow-x: hidden;  /* To prevent horizontal scrolling */
+    scroll-behavior: smooth; /* Optional: smooth scrolling */
+}
+
+/* Transparent Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Navbar logo - using Bebas Neue font */
+.navbar .logo {
+    font-family: 'Bebas Neue', sans-serif; /* Keep the Bebas Neue font */
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6f61;
+}
+
+/* Section styling */
+.section {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Home Section */
+#home {
+    background-color: #1F3A64; /* Ensure the home section has a background color */
+    position: relative; /* For positioning the mesh background */
+}
+
+
+
+/* Projects Section */
+#projects {
+    background: linear-gradient(to bottom, #FF6F61, #5c6bc0);
+    padding: 4rem 2rem;
+}
+
+/* Container for Projects */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Project Card Styling */
+.project-card {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card img {
+    width: 60px; /* Adjust this value to make the circle smaller */
+    height: 80px; /* Keep the height equal to the width for a perfect circle */
+    border-radius: 50%; /* Ensure it's a circle */
+    object-fit: cover; /* To make sure the image fits well inside the circle */
+    margin-right: 1rem; /* Space between the image and text */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image Styling */
+.project-image {
+    flex-shrink: 0;
+    width: 150px; /* Adjust the width as needed */
+    height: 150px;
+    overflow: hidden;
+    border-radius: 80%;
+    margin-right: 2rem;
+}
+
+.project-image .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Project Details Styling */
+.project-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Project Title Styling */
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-title a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-title a:hover {
+    color: #008080;
+}
+
+/* Project Description Styling */
+.project-description {
+    font-size: 1rem;
+    color: #dddddd;
+}
+
+
+#skills {
+    background: linear-gradient(to bottom, #5c6bc0, #9B4DCA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bento {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: repeat(3, 1fr); /* Three rows */
+    grid-gap: 20px; /* Space between boxes */
+  }
+
+  .box {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  /* You can add specific styles for each box if needed */
+  .box1 { background-image: url('image1.jpg'); background-size: cover; }
+  .box2 { background-image: url('image2.jpg'); background-size: cover; }
+  .box3 { background-image: url('image3.jpg'); background-size: cover; }
+  .box4 { background-image: url('image4.jpg'); background-size: cover; }
+  .box5 { background-image: url('image5.jpg'); background-size: cover; }
+  .box6 { background-image: url('image6.jpg'); background-size: cover; }
+
+  
+
+/* Contact Section */
+#contact {
+    background: linear-gradient(to bottom, #9B4DCA, #008080);
+
+}
+
+/* Section content styling */
+.section-content {
+    text-align: center;
+}
+
+/* Section Titles */
+h1, h2 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+/* Mesh Background */
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mesh background elements */
+.container div {
+    position: absolute;
+    border-radius: 3rem;
+    animation: gradient 6s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% {
+        transform: scale(1) translate(0);
+    }
+    50% {
+        transform: scale(1.2) translate(30px, 30px);
+    }
+    100% {
+        transform: scale(1) translate(0);
+    }
+}
+
+/* Colors for mesh elements */
+.container div:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    background-color: #1F3A64; /* Deep Blue */
+    animation-delay: 0s;
+}
+
+.container div:nth-child(2) {
+    height: 80%;
+    width: 70%;
+    background-color: #9B4DCA; /* Vibrant Purple */
+    top: -12%;
+    right: -12%;
+    animation-delay: 1s;
+}
+
+.container div:nth-child(3) {
+    height: 50%;
+    width: 75%;
+    background-color: #FF6F61; /* Coral Orange */
+    bottom: -10%;
+    left: -5%;
+    animation-delay: 2s;
+}
+
+.container div:nth-child(4) {
+    height: 65%;
+    width: 80%;
+    background-color: #008080; /* Teal Blue */
+    bottom: -15%;
+    right: -20%;
+    animation-delay: 3s;
+}
+
+.container div:nth-child(5) {
+    height: 70%;
+    width: 65%;
+    background-color: #D1D1D1; /* Light Gray for subtle background element */
+    bottom: 0%;
+    right: -50%;
+    animation-delay: 4s;
+}
+
+/* Overlay effect with blur on the background */
+.container::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(200px);
+    z-index: 1; /* To keep the typewriter above the blurred background */
+}
+
+
+
+  .contact-form {
+    width: 100%;
+  max-width: 680px;
+  height: 500px;
+  padding: 30px;
+  margin: 0 28px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(50px);
+  border: 3px solid #008080;
+  margin-left: 170px;
+  }
+
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .form-group input, 
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-group input:focus, 
+  .form-group textarea:focus {
+    border-color: #007BFF;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF6F61;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #9B4DCA;
+  }
+
+  .footer {
+    background-color: #1F3A64; /* Match the background color of your website */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+  }
+
+  
+  /* Home Section Styling */
+.home-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Mesh Gradient Background */
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1F3A64, #9B4DCA, #FF6F61, #008080);
+    background-size: 300% 300%;
+    animation: meshAnimation 8s ease infinite;
+}
+
+.container div {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: floating 6s infinite alternate ease-in-out;
+}
+
+.container div:nth-child(1) { top: 15%; left: 20%; background: #1F3A64; }
+.container div:nth-child(2) { top: 50%; left: 60%; background: #9B4DCA; }
+.container div:nth-child(3) { bottom: 10%; left: 40%; background: #434383; }
+.container div:nth-child(4) { top: 70%; right: 20%; background: #FF6F61; }
+.container div:nth-child(5) { bottom: 30%; right: 50%; background: #008080; }
+
+@keyframes floating {
+    0% { transform: translateY(-20px) scale(1); }
+    100% { transform: translateY(20px) scale(1.1); }
+}
+
+@keyframes meshAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Distorted Text Effect */
+.distorted-text {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.distorted-text span {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.distorted-text:hover span:nth-child(odd) {
+    transform: translateY(-10px) rotate(-10deg);
+    color: #08e0c7;
+}
+
+.distorted-text:hover span:nth-child(even) {
+    transform: translateY(10px) rotate(10deg);
+    color: #2a0664;
+}
+
+/* Subtext */
+.subtext {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #ffffff;
+    opacity: 0.9;
+    position: relative;
+    z-index: 10;
+}
+

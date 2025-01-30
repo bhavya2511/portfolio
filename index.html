@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <a href="#" class="logo">BHAVYA</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Home Section -->
+<section id="home" class="home-section">
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="section-content">
+        <h1 class="distorted-text">
+            <span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span>
+        </h1>
+        <p class="subtext">to My Portfolio</p>
+        <p class="subtext">Scroll down to know me!</p>
+    </div>
+</section>
+  <!-- Projects Section -->
+<section id="projects" class="projects-section">
+    <h2 class="section-title">My Projects</h2>
+    <div class="projects-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Project 1" class="image">
+            </div>
+            <div class="project-details">
+                <h3 class="project-title">
+                    <a href="https://github.com/bhavya2511/cpp_project_final" target="_blank">Online Shopping System</a>
+                </h3>
+                <p class="project-description">
+                    Languages Used: C++, MySQL.</p><p>
+                    A console-based online shopping platform built using C++ and MySQL. The system allows users to browse products, manage their shopping cart, and complete purchases, while admins can manage product listings and monitor orders. It integrates MySQL for data storage, providing a real-world approach to database management alongside C++ programming.
+                </p>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=1200"  class="image">
+            </div>
+            <div class="project-details">
+                <h3 class="project-title">
+                    <a  target="_blank">Exploring....</a>
+                </h3>
+                <p class="project-description">more to come soon!!                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <section class="skills-section">
+            <div class="skills-grid">
+              <div class="skill-box box1"><img src="https://tse4.mm.bing.net/th?id=OIP.I19sYZ_yu8_yhx83Wkg1dgHaEK&pid=Api&P=0&h=220" alt="Skill 1"></div>
+              <div class="skill-box box2"><img src="https://wallpaperaccess.com/full/1294266.png" alt="Skill 2"></div>
+              <div class="skill-box box3"><img src="https://tse3.mm.bing.net/th?id=OIP.wsus-_9qxZ6aYYVI8lj5LwHaGB&pid=Api&P=0&h=220" alt="Skill 3"></div>
+              <div class="skill-box box6"><img src="https://wallpapercave.com/wp/wp8724894.png" alt="Skill 6"></div>
+              <div class="skill-box box4"><img src="https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Skill 4"></div>
+              <div class="skill-box box5"><img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/08/cpp_logo_on_mathematical_bg.jpg" alt="Skill 5"></div>
+              
+            </div>
+          
+            <div class="skills-text">
+              <h2>Skills & Expertise</h2>
+              <p>AI & Machine Learning | Cybersecurity | Web Development</p>
+              <p>Still exploring, still learning—always growing and improving with every challenge I take on!</p>
+            </div>
+          </section>
+          
+          <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: Arial, sans-serif;
+            }
+          
+            .skills-section {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              padding: 50px;
+              min-height: 80vh;
+              background-color: #434383;
+              color: white;
+            }
+          
+            .skills-grid {
+              display: grid;
+              grid-template-columns: repeat(3, 100px);
+              grid-template-rows: repeat(3, 100px);
+              gap: 15px;
+              width: 320px;
+            }
+          
+            .skill-box {
+              background: #4f53aa;
+              border-radius: 12px;
+              overflow: hidden;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transition: transform 0.3s ease-in-out;
+            }
+          
+            .skill-box img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          
+            .skill-box:hover {
+              transform: scale(1.1);
+            }
+          
+            .box1 { grid-column: span 2; }
+            .box2 { grid-row: span 2; }
+            .box3 { }
+            .box4 { grid-column: span 2; }
+            .box5 { }
+            .box6 { }
+          
+            .skills-text {
+              margin-left: 50px;
+              max-width: 400px;
+            }
+          
+            .skills-text h2 {
+              font-size: 26px;
+              margin-bottom: 10px;
+              color: #8ac3d1;
+            }
+          
+            .skills-text p {
+              font-size: 16px;
+              line-height: 1.5;
+            }
+          
+            @media (max-width: 768px) {
+              .skills-section {
+                flex-direction: column;
+                text-align: center;
+              }
+              .skills-grid {
+                margin-bottom: 20px;
+              }
+              .skills-text {
+                margin-left: 0;
+              }
+            }
+          </style>
+          
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-content">
+            
+        <div class="contact-form">
+            <form action="#" method="POST">
+              <h2>How to reach me?</h2>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-about">
+            <h2>Bhavya Uppari</h2>
+            <p>AI Enthusiast | Cybersecurity Explorer</p>
+            <p>Passionate about building secure and intelligent systems.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">About Me</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h3>Get in Touch</h3>
+            <div class="footer-social">
+              <a href="https://github.com/bhavya2511" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+              </a>
+              <a href="https://www.instagram.com/bhavvya_ush" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+              </a>
+              <a href="mailto:bhavyaushasree1602@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+              </a>
+              <a href="https://www.linkedin.com/in/bhavya-usha-sree" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+              </a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2024 Bhavya Uppari | NIT Surat</p>
+        </div>
+      </footer>
+      
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, sans-serif;
+        }
+      
+        footer {
+          background: #1F3A64;
+          color: white;
+          padding: 40px 0;
+          text-align: center;
+        }
+      
+        .footer-container {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          max-width: 1100px;
+          margin: auto;
+          padding: 20px;
+        }
+      
+        .footer-container div {
+          margin: 20px;
+        }
+      
+        .footer-about h2 {
+          font-size: 24px;
+          margin-bottom: 10px;
+          color: #9B4DCA;
+        }
+      
+        .footer-links h3,
+        .footer-contact h3 {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      
+        .footer-links ul {
+          list-style: none;
+          padding: 0;
+        }
+      
+        .footer-links ul li {
+          margin: 8px 0;
+        }
+      
+        .footer-links ul li a {
+          text-decoration: none;
+          color: white;
+          transition: color 0.3s ease;
+        }
+      
+        .footer-links ul li a:hover {
+          color: #FF6F61;
+        }
+      
+        .footer-contact p {
+          margin: 5px 0;
+        }
+      
+        .footer-social {
+          margin-top: 10px;
+        }
+      
+        .footer-social a {
+          display: inline-block;
+          margin: 0 10px;
+        }
+      
+        .footer-social img {
+          width: 40px;
+          height: 40px;
+          transition: transform 0.3s ease;
+        }
+      
+        .footer-social img:hover {
+          transform: scale(1.2);
+        }
+      
+        .footer-bottom {
+          margin-top: 20px;
+          border-top: 1px solid #444;
+          padding-top: 15px;
+          font-size: 14px;
+        }
+      
+        @media (max-width: 768px) {
+          .footer-container {
+            flex-direction: column;
+            text-align: center;
+          }
+        }
+      </style>
+      <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
