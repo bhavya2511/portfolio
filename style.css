@@ -467,12 +467,12 @@ h1, h2 {
 
 .distorted-text:hover span:nth-child(odd) {
     transform: translateY(-10px) rotate(-10deg);
-    color: #08e0c7;
+    color: #33CCCC;
 }
 
 .distorted-text:hover span:nth-child(even) {
     transform: translateY(10px) rotate(10deg);
-    color: #2a0664;
+    color: #C3A2FF;
 }
 
 /* Subtext */
